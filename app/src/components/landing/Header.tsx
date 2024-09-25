@@ -2,7 +2,6 @@
 import React, { useState, useEffect } from "react";
 import { MdMenu, MdClose } from "react-icons/md"; // Ícones de menu e fechar
 import styles from "./Header.module.css";
-import { throttle } from 'lodash';
 
 export default function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -10,14 +9,12 @@ export default function Header() {
 
   // Função para monitorar o scroll da página
   useEffect(() => {
-    const handleScroll = throttle(() => {
+    const handleScroll = () => {
       const scrollPosition = window.scrollY;
-      setScrolled(scrollPosition > 50);
-    }, 100); // A cada 100ms
+      setScrolled(scrollPosition > 50); // Ativa quando scroll > 50px
+    };
 
     window.addEventListener("scroll", handleScroll);
-    
-    // Cleanup
     return () => {
       window.removeEventListener("scroll", handleScroll);
     };
@@ -26,7 +23,6 @@ export default function Header() {
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen);
   };
-
 
   return (
     <header className={`${styles.header} ${scrolled ? styles.scrolled : ""}`} style={{ marginLeft: "-6px", paddingTop: "12px" }}>

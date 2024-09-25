@@ -5,12 +5,10 @@ import {
   FaHandsHelping,
   FaBalanceScale,
   FaUsers,
-  FaLightbulb,
   FaGavel,
   FaHeartbeat,
   FaNetworkWired
 } from 'react-icons/fa';
-import Image from 'next/image';
 
 const beneficiosData = [
   {

@@ -44,7 +44,7 @@ export default function Testimonials() {
                     {testimonials.map((testimonial) => (
                         <div key={testimonial.id} className={styles.testimonialCard}>
                             <img src={testimonial.imageUrl} alt={testimonial.author} className={styles.testimonialImage} />
-                            <p className={styles.quote}>"{testimonial.quote}"</p>
+                            <p className={styles.quote}>{testimonial.quote}</p>
                             <p className={styles.author}>- {testimonial.author}, {testimonial.position}</p>
                         </div>
                     ))}
