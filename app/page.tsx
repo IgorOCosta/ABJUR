@@ -8,6 +8,7 @@ import Header from "./src/components/landing/Header";
 import Intro from "./src/components/landing/Intro";
 import Noticias from "./src/components/landing/Noticias";
 import Testimonials from "./src/components/landing/Testimonials";
+import Footer from "./src/components/landing/Footer";
 
 export default function LandingPage() {
   return (
@@ -21,9 +22,9 @@ export default function LandingPage() {
       <Noticias />
       <EbookSection/>
       <Eventos />
-      <Testimonials />
-
       <Contato />
+      <Testimonials />
+      <Footer />
     </div>
   );
 }

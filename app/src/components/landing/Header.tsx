@@ -27,6 +27,7 @@ export default function Header() {
     setIsMenuOpen(!isMenuOpen);
   };
 
+
   return (
     <header className={`${styles.header} ${scrolled ? styles.scrolled : ""}`} style={{ marginLeft: "-6px", paddingTop: "12px" }}>
       <nav className={styles.nav }>

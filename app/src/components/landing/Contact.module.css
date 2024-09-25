@@ -2,7 +2,6 @@
     display: flex;
     justify-content: center;
     padding: 2.5rem 1rem;
-    min-height: 100vh;
     font-family: 'Roboto', sans-serif;
 }
 
@@ -22,9 +21,7 @@
 
 .rightBlock {
     flex: 1;
-    width: 80%;
-    align-items: start;
-    align-self: start;
+    width: 85%;
 }
 
 .title {

@@ -9,7 +9,7 @@ const VideoSection: React.FC = () => {
             <p className={styles.videoSubtitle}>Conheça mais sobre nossa história e trajetória.</p>
             <div className={styles.videoContainer}>
                 <iframe
-                    src="https://www.youtube.com/embed/dQw4w9WgXcQ"
+                    src="https://www.youtube.com/watch?v=x65Aua3iVos"
                     title="YouTube video"
                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                     allowFullScreen
