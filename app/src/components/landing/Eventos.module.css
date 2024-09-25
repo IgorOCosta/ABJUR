@@ -1,0 +1,149 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+
+.container {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 2rem 1rem;
+    text-align: center;
+}
+
+.title {
+    font-size: 2rem;
+
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    margin-bottom: 2rem;
+    color: #b6191f;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 5rem;
+}
+
+@media (min-width: 640px) {
+    .grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (min-width: 1024px) {
+    .grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+.moreEvents {
+    text-align: right;
+    margin-top: 2rem;
+}
+
+.seeMore {
+    color: #1a73e8;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.seeMore:hover {
+    color: #0c47b5;
+}
+
+.card {
+    border-radius: 8px;
+    overflow: hidden;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.upcoming {
+    background-color: #f0f0f0;
+}
+
+.occurred {
+    background-color: #e0e0e0;
+}
+
+.imageWrapper {
+    position: relative;
+}
+
+.image {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.occurredOverlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(96, 96, 96, 0.85);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.occurredText {
+    color: white;
+    font-size: 1.25rem;
+    font-weight: bold;
+}
+
+.content {
+    padding: 1rem;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+.eventTitle {
+    font-size: 1.25rem;
+    font-weight: bold;
+    max-width: 70%;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    color: #b6191f;
+}
+
+.dateBox {
+    background-color: #b6191f;
+    color: white;
+    width: 3rem;
+    height: 3rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 0.5rem;
+}
+
+.day {
+    font-size: 1.25rem;
+    font-weight: bold;
+}
+
+.month {
+    font-size: 0.75rem;
+}
+
+.address {
+    font-size: 0.875rem;
+    color: #333;
+    text-align: start;
+    font-weight: bold;
+}
+
+.description {
+    font-size: 0.875rem;
+    color: #666;
+    margin-top: 0.5rem;
+    text-align: start;
+}

@@ -1,0 +1,139 @@
+.container {
+    display: flex;
+    justify-content: center;
+    padding: 2.5rem 1rem;
+    font-family: 'Roboto', sans-serif;
+}
+
+.innerContainer {
+    display: flex;
+    flex-direction: column;
+    max-width: 1100px;
+    width: 100%;
+    align-items: top;
+}
+
+.leftBlock {
+    flex: 1;
+    margin-bottom: 2rem;
+    text-align: left;
+}
+
+.rightBlock {
+    flex: 1;
+    width: 85%;
+}
+
+.title {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+
+.textWithLine {
+    display: flex;
+    align-items: left;
+    justify-content: left;
+    margin-bottom: 1.5rem;
+}
+
+.line {
+    width: 4px;
+    background-color: #b6191f;
+    margin-right: 1rem;
+    height: 100px;
+}
+
+.description {
+    color: #4a4a4a;
+    text-align: left;
+    max-width: 500px;
+}
+
+.socialIcons {
+    display: flex;
+    justify-content: left;
+    gap: 1rem;
+}
+
+.iconWrapper {
+    width: 40px;
+    height: 40px;
+    background-color: #e5e5e5;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+}
+
+.icon {
+    color: #b6191f;
+    font-size: 1.5rem;
+}
+
+.form {
+    background-color: #a0161b;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+    font-family: 'Roboto', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.inputWrapper {
+    margin-bottom: 1rem;
+    width: 100%;
+}
+
+.label {
+    display: block;
+    font-size: 0.875rem;
+    font-weight: 500;
+    margin-bottom: 0.5rem;
+    color: white;
+}
+
+.input, .textarea {
+    width: 95%;
+    padding: 0.75rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 1rem;
+    font-family: 'Roboto', sans-serif;
+}
+
+.textarea {
+    height: 8rem;
+}
+
+.submitButton {
+    background-color: white;
+    color: #a0161b;
+    padding: 0.75rem;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 100%;
+    font-size: 1rem;
+    font-family: 'Roboto', sans-serif;
+}
+
+.submitButton:hover {
+    background-color: #f4f4f4;
+}
+
+/* Responsividade */
+@media (min-width: 1024px) {
+    .innerContainer {
+        flex-direction: row;
+    }
+
+    .rightBlock {
+        margin-left: 2rem;
+    }
+}

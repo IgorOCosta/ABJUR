@@ -1,0 +1,19 @@
+/* Estilos para OurStory */
+.storySection {
+    margin-bottom: 3rem;
+}
+
+.storyTitle {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #b6191f;
+    margin-bottom: 1rem;
+    text-align: left;
+}
+
+.storyText {
+    font-size: 1.1rem;
+    color: #333;
+    line-height: 1.6;
+    text-align: left;
+}

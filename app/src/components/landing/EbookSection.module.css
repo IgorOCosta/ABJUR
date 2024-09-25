@@ -1,0 +1,114 @@
+/* app/src/components/landing/EbookSection.module.css */
+
+.ebookSection {
+    width: 100%;
+    padding: 60px 20px;
+    background: white; /* Fundo branco */
+    max-width: 1100px;
+    margin: 0 auto;
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1100px;
+    margin: 0 auto;
+    width: 100%;
+}
+
+.textContainer {
+    width: 100%;
+    max-width: 600px;
+    text-align: left;
+}
+
+.title {
+    font-size: 3rem;
+    font-weight: 700;
+    margin-bottom: 20px;
+    color: #b6191f; /* Cor primaria (vinho) */
+}
+
+.subtitle {
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-bottom: 40px;
+    color: #333;
+}
+
+.quote {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 40px;
+}
+
+.line {
+    width: 4px;
+    background-color: #b6191f; /* Linha vinho */
+    margin-right: 16px;
+    min-height: 80px;
+}
+
+.quoteText {
+    font-size: 1rem;
+    color: #555;
+    line-height: 1.6;
+}
+
+.buttonContainer {
+    display: flex;
+    justify-content: flex-start;
+}
+
+.button {
+    background-color: #b6191f; /* Fundo vermelho */
+    color: white; /* Texto branco */
+    padding: 12px 24px;
+    border: none;
+    border-radius: 8px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    width: 80%;
+}
+
+.button:hover {
+    background-color: #a10e17; /* Tom mais escuro no hover */
+}
+
+.imageContainer {
+    width: 100%;
+    max-width: 400px;
+    margin-top: 40px;
+}
+
+.ebookImage {
+    border-radius: 8px;
+}
+
+/* Responsividade */
+@media (min-width: 768px) {
+    .container {
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .textContainer {
+        width: 48%;
+        text-align: left;
+    }
+
+    .imageContainer {
+        width: 48%;
+        margin-top: 0;
+    }
+
+    .button {
+        width: 80%;
+    }
+}
