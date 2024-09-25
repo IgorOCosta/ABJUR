@@ -1,0 +1,34 @@
+/* Estilos para VideoSection */
+.videoSection {
+    margin-bottom: 3rem;
+    text-align: center;
+}
+
+.videoTitle {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #b6191f;
+    margin-bottom: 1rem;
+}
+
+.videoSubtitle {
+    font-size: 1.25rem;
+    margin-bottom: 2rem;
+}
+
+.videoContainer {
+    position: relative;
+    padding-bottom: 56.25%;
+    width: 100%;
+    height: 0;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}

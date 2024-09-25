@@ -1,0 +1,130 @@
+/* Estilos para o Header */
+.header {
+  background-color: transparent;
+  width: 100%;
+  padding: 0;
+  font-family: 'Roboto', sans-serif;
+  position: absolute;
+  left: 0;
+  z-index: 1000;
+  transition: background-color 0.5s ease, color 0.5s ease;
+}
+
+
+.nav {
+  margin: 0 auto;
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: white;
+  transition: color 0.5s ease;
+}
+
+
+/* Links de navegação escondidos em dispositivos móveis */
+.navLinks {
+  display: flex;
+  gap: 2.5rem;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.navLink {
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+  padding: 0;
+  outline: none;
+  position: relative;
+  transition: color 0.5s ease;
+}
+
+.navLink::after {
+  content: "";
+  position: absolute;
+  bottom: -4px;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background-color: transparent;
+  border-radius: 2px;
+  transition: background-color 0.3s ease, width 0.3s ease;
+}
+
+.navLink:hover::after {
+  background-color: #b6191f;
+  width: 80%;
+}
+
+.memberButton {
+  background-color: #b6191f;
+  border: 2px solid #b6191f;
+  color: white;
+  padding: 12px 16px; /* Aumentando o tamanho do botão */
+  border-radius: 0.3rem;
+  font-size: 18px; /* Aumentando o tamanho do texto no botão */
+  transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease;
+  font-weight: bold;
+  text-decoration: none; /* Removendo o underline do texto */
+}
+
+
+
+.memberButton:hover {
+  background-color: #a00e18;
+  color: white;
+}
+
+/* Estilos para o botão do menu sanduíche */
+.menuButton {
+  display: none;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.menuButton svg {
+  width: 36px; /* Aumentando o tamanho dos ícones */
+  height: 36px;
+}
+
+/* Estilo para o menu aberto */
+.navLinks.open {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem; /* Aumentando o espaçamento entre os itens */
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 100vh; /* O menu ocupa a tela toda */
+  background-color: rgba(0, 0, 0, 0.8); /* Fundo preto quase transparente */
+  width: 100%;
+  padding: 2rem 1rem; /* Aumentando o padding para um layout mais espaçado */
+  z-index: 1000;
+  justify-content: flex-start; /* Itens começam do topo */
+  align-items: center; /* Centralizado horizontalmente */
+}
+
+.navLink.openLink {
+  color: white;
+  font-size: 1.5rem; /* Aumentando o tamanho do texto */
+}
+
+@media (max-width: 768px) {
+  .navLinks {
+      display: none;
+  }
+
+  .menuButton {
+      display: block;
+      color: white;
+      z-index: 1100;
+  }
+}
